@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: student-risk-api
+    runtime: docker
+    plan: free              # le plan par défaut d'un Blueprint est payant
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /health
+    buildFilter:            # optionnel : ne reconstruit que si le backend change
+      paths:
+        - backend/**
+    envVars:
+      - key: APP_TRAINING_ENABLED
+        value: "false"
+      - key: APP_CORS_ORIGINS
+        sync: false         # saisi au premier déploiement
