@@ -1,0 +1,41 @@
+{
+  "regression": {
+    "algorithm": "random_forest",
+    "metrics": {
+      "rmse": 7.89758527599652,
+      "mae": 6.194853952228702,
+      "r2": 0.2840988729189846
+    },
+    "trained_at": "2026-10-10T11:51:38+00:00",
+    "n_train": 12800,
+    "n_test": 3200,
+    "dataset": "data\\AI_SocialMedia_Student_Dataset.csv",
+    "versions": {
+      "python": "3.14.6",
+      "scikit-learn": "1.8.0",
+      "lightgbm": "4.7.0"
+    }
+  },
+  "classification": {
+    "algorithm": "lightgbm",
+    "metrics": {
+      "roc_auc": 0.7767566080220464,
+      "pr_auc": 0.3366048097908509,
+      "f1": 0.3691931540342298,
+      "precision": 0.31069958847736623,
+      "recall": 0.45481927710843373,
+      "threshold": 0.5
+    },
+    "best_params": {},
+    "risk_cutoff": 60.0,
+    "trained_at": "2026-10-10T11:51:38+00:00",
+    "n_train": 12800,
+    "n_test": 3200,
+    "dataset": "data\\AI_SocialMedia_Student_Dataset.csv",
+    "versions": {
+      "python": "3.14.6",
+      "scikit-learn": "1.8.0",
+      "lightgbm": "4.7.0"
+    }
+  }
+}

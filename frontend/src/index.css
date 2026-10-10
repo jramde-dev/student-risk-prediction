@@ -1,0 +1,18 @@
+:root { font-family: system-ui, sans-serif; color-scheme: light dark; }
+body { margin: 0; }
+main { max-width: 860px; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+.hint { opacity: .7; margin-top: 0; }
+.card { border: 1px solid color-mix(in srgb, currentColor 25%, transparent); border-radius: 10px; padding: 1rem; margin: 0 0 1rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem 1rem; }
+label { display: flex; flex-direction: column; gap: .25rem; font-size: .9rem; }
+label.inline { flex-direction: row; align-items: center; gap: .5rem; }
+input, select, button { font: inherit; padding: .45rem .6rem; border-radius: 6px; border: 1px solid color-mix(in srgb, currentColor 35%, transparent); background: transparent; color: inherit; }
+button { cursor: pointer; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+button.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+button.link { border: 0; padding: 0; margin-top: .75rem; text-decoration: underline; opacity: .75; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
+.result { margin-top: 1rem; padding: .75rem 1rem; border-radius: 8px; display: flex; flex-direction: column; gap: .15rem; border-left: 4px solid gray; background: color-mix(in srgb, gray 12%, transparent); }
+.result.risk { border-color: #dc2626; background: color-mix(in srgb, #dc2626 14%, transparent); }
+.result.ok { border-color: #16a34a; background: color-mix(in srgb, #16a34a 14%, transparent); }
+.error { color: #dc2626; margin-top: 1rem; }

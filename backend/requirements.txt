@@ -1,0 +1,12 @@
+# Dépendances d'EXÉCUTION, versions épinglées.
+# Le modèle (pickle) doit être lu avec les mêmes versions de scikit-learn/LightGBM
+# que celles utilisées pour l'entraîner : installez ce fichier AUSSI en local avant d'entraîner.
+fastapi==0.143.0
+uvicorn[standard]==0.54.0
+pydantic-settings==2.15.0
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.2
+scikit-learn==1.8.0
+lightgbm==4.7.0
+joblib==1.5.3
